@@ -1,7 +1,7 @@
 # Table-to-CSV
 jQuery plugin for exporting data to CSV
 
-Init:
+# Init:
 var tocsv = $('table').elementToCSV({
     headerSelector: 'thead',
     contentSelector: 'tbody'
@@ -63,7 +63,7 @@ Options:
   (int) animationTime (default: 250) -- value for animations speed
 
 
-#Events
+# Events
   
   exportEvent:
     by default it is 'ttcsv_.export' -- structure is OPTIONS.PREFIX + '.export' -- if you change prefix "OPTIONS.PREFIX" should be replaced also.
