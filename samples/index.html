@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<title>Sample</title>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+
+		<style>
+			* { 
+				box-sizing: border-box;
+			}
+			main {
+				max-width: 1200px;
+				width: 100%;
+				margin: 0 auto;
+			}
+			table { 
+				width: 100%;
+				height: auto;
+				text-align: left;
+			}
+		    .ttcsv_triggers--wrapper button, .ttcsv_triggers--wrapper a {
+		    	display: inline-block;
+		    	width: auto;
+		    	border: none;
+		    	background: #ededed;
+		    	padding: 5px 10px;
+		    }
+		    .ttcsv_triggers--wrapper button svg, .ttcsv_triggers--wrapper a svg {
+		    	margin-right: 6px;
+		    	max-height: 20px;
+		    	vertical-align: top;
+		    }
+		</style>
+
+	</head>
+
+
+	<body>
+
+		<main>
+			
+			<table>
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Job</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2</td>
+						<td>John</td>
+						<td>Teacher</td>
+						<td>Handsome</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Jane</td>
+						<td>Mechanic</td>
+						<td>Quiet</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Mike</td>
+						<td>Plumber</td>
+						<td>Talkative</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>David</td>
+						<td>Manager</td>
+						<td>Shy</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+		</main>
+
+		<!-- jQuery -->
+		<script type="text/javascript" src="jquery.min.js"></script>
+
+		<!-- CSV Export -->
+		<script type="text/javascript" src="jTableToCSV.js"></script>
+		<script type="text/javascript">
+			(function($){
+				var etc = $('table').elementToCSV();
+			})(jQuery);
+		</script>
+	</body>
+</html>
