@@ -7,7 +7,7 @@ var tocsv = $('table').elementToCSV({
     contentSelector: 'tbody'
 });
 
-Options:
+# Options:
   (bool) debug (default: true) -- Ouputs debug data through init and data collection run
   
   (string) prefix (default: 'ttcsv_') -- Used for prefixing elements and events raised by plugin
